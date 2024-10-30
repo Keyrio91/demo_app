@@ -1,0 +1,1 @@
+{"version":3,"file":"formatter.js","names":["sap","ui","define","getState","status"],"sources":["formatter-dbg.js"],"mappings":"AAAAA,IAAIC,GAAGC,OAAO,GAAI,WACd,MAAO,CACHC,SAAU,SAASC,GACf,OAAQA,GACJ,IAAK,YACD,MAAO,UACP,MACJ,IAAK,eACD,MAAO,UACP,MACJ,IAAK,eACD,MAAO,QACP,MACJ,QACI,MAEZ,EAER","ignoreList":[]}

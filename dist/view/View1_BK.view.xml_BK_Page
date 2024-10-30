@@ -1,0 +1,40 @@
+<mvc:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="mt.mdg.ko.controller.View1">
+    <Page title="View 1">
+        <!-- <Button  text="Go To Next" press="onNext"></Button> -->
+        <headerContent>
+            <Toolbar >
+                <Button icon="sap-icon://action" press="onNext"></Button>
+            </Toolbar>
+        </headerContent>
+        <content>
+            <SearchField id="idSearch" search="onSearch"></SearchField>
+            <List id="idList" width="80%" 
+            items="{ path: '/fruits' ,
+                    sorter: { path: 'type', group: true } }" 
+            mode="MultiSelect" 
+            itemPress="onItemSelect">
+            <!-- Used to display simple data with left-right side of list-->
+                    <headerToolbar>
+                        <Toolbar>
+                            <Button icon="sap-icon://delete" type="Reject" press="onDeleteData" />
+                        </Toolbar>
+                    </headerToolbar>
+
+                    <!-- Object List item is used to display the Business Object data -->
+                    <ObjectListItem type="Navigation" title="{name}"
+                    intro="{healthBenefits}"
+                    number="{price}" numberUnit="{unit}"
+                    icon="{image}"
+                    >
+                        <attributes>
+                            <ObjectAttribute title="Type" text="{type}"></ObjectAttribute>
+                        </attributes>
+                        <firstStatus>
+                            <ObjectStatus text="{status}" state="Success"></ObjectStatus>
+                        </firstStatus>
+                    </ObjectListItem>
+
+            </List>
+        </content>
+    </Page>
+</mvc:View>

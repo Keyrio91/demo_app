@@ -1,0 +1,2 @@
+sap.ui.define(["mt/mdg/ko/controller/BaseController"],function(t){"use strict";return t.extend("mt.mdg.ko.controller.Empty",{onNext:function(){var t=this.getView().getParent();t.to("idView2")}})});
+//# sourceMappingURL=Empty.Controller.js.map
